@@ -1,0 +1,218 @@
+/* Background body */
+body {
+  margin: auto;
+  overflow: auto;
+  overflow-x: hidden;
+  animation: gradient 15s ease infinite;
+  background: linear-gradient(315deg, rgb(150, 67, 48) 3%, rgb(150, 6, 148) 24%, rgb(150, 6, 129) 41%, rgb(139, 12, 60) 58%);
+  background-size: 400% 400%;
+  background-attachment: fixed;
+}
+body.background1 {
+  margin: auto;
+  overflow: auto;
+  overflow-x: hidden;
+  animation: gradient 15s ease infinite;
+  background: linear-gradient(315deg, rgb(150, 67, 48) 3%, rgb(150, 6, 148) 24%, rgb(150, 6, 129) 41%, rgb(139, 12, 60) 58%);
+  background-size: 400% 400%;
+  background-attachment: fixed;
+}
+
+body.background2 {
+  margin: auto;
+  overflow: auto;
+  overflow-x: hidden;
+  animation: gradient2 15s ease infinite;
+  background: linear-gradient(315deg, rgb(79, 1, 174) 3%, rgb(34, 0, 255) 24%, rgb(0, 0, 255) 41%, rgb(9, 125, 183) 58%);
+  background-size: 400% 400%;
+  background-attachment: fixed;
+}
+
+body.background3 {
+  margin: auto;
+  overflow: auto;
+  overflow-x: hidden;
+  animation: gradient3 15s ease infinite;
+  background: linear-gradient(315deg, rgb(11, 167, 58) 3%, rgb(13, 159, 108) 24%, rgb(38, 202, 125) 41%, rgb(14, 205, 49) 58%);
+  background-size: 400% 400%;
+  background-attachment: fixed;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Colour animation frames */
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  50% {
+    background-position: 100% 100%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+@keyframes gradient2 {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  50% {
+    background-position: 100% 100%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+@keyframes gradient3 {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  50% {
+    background-position: 100% 100%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+/* Ensures compatibility with Chrome */
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  50% {
+    background-position: 100% 100%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+@-webkit-keyframes gradient2 {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  50% {
+    background-position: 100% 100%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+@-webkit-keyframes gradient3 {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  50% {
+    background-position: 100% 100%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+/*Wave function*/
+.wave {
+  background: rgba(255 255 255 / 25%);
+  /*final colour after wave*/
+  border-radius: 1000% 1000% 0 0;
+  position: fixed;
+  width: 200%;
+  height: 12em;
+  animation: wave 10s -3s linear infinite;
+  -webkit-animation: wave 10s -3s linear infinite;
+  /*for older version*/
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+  /*adjucts the opacity of the waves*/
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+  bottom: -1.25em;
+  animation: wave 18s linear reverse infinite;
+  -webkit-animation: wave 18s linear reverse infinite;
+  /* For older versions of Chrome */
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.wave:nth-of-type(3) {
+  bottom: -2.5em;
+  animation: wave 20s -1s reverse infinite;
+  -webkit-animation: wave 20s -1s reverse infinite;
+  /* For older versions of Chrome */
+  opacity: 0.9;
+  z-index: -1;
+}
+
+/*Wave animation frames*/
+@keyframes wave {
+  2% {
+    transform: translateX(1);
+  }
+
+  25% {
+    transform: translateX(-25%);
+  }
+
+  50% {
+    transform: translateX(-50%);
+  }
+
+  75% {
+    transform: translateX(-25%);
+  }
+
+  100% {
+    transform: translateX(1);
+  }
+}
+
+@-webkit-keyframes wave {
+  2% {
+    transform: translateX(1);
+  }
+
+  25% {
+    transform: translateX(-25%);
+  }
+
+  50% {
+    transform: translateX(-50%);
+  }
+
+  75% {
+    transform: translateX(-25%);
+  }
+
+  100% {
+    transform: translateX(1);
+  }
+}

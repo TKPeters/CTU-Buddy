@@ -1,0 +1,411 @@
+/* The #navbar * class sets the padding, margin, text-decoration, list-style, box-sizing, font-family, and z-index for all elements within the navbar. */
+
+#navbar * {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    z-index: 99999;
+}
+
+/* The #navbar nav:hover class changes the background color to white when the mouse hovers over the navbar. */
+
+#navbar nav:hover {
+    background: rgba(255, 255, 255, 1);
+    transition: 0.5s;
+}
+
+/* The #navbar nav class sets the background color, transition, height, width, position, overflow, align-self, justify-self, top, and left of the navbar. */
+#navbar nav {
+    background: #859CD0;
+    transition: 0.5s;
+    height: 80 px;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    align-self: top;
+    justify-self: left;
+    top: 0px;
+    left: 0px;
+}
+
+/* The #navbar div class sets the width and height of the div within the navbar. */
+
+#navbar div {
+    width: 100%;
+    height: 80px;
+}
+
+/* The #navbar label.logo class sets the color, font-size, line-height, margin-top, padding, and font-weight of the logo within the navbar. */
+
+#navbar label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    margin-top: 100px;
+    padding: -10px 70px;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+/* The #navbar nav ul class floats the unordered list to the right and sets the margin-right. */
+
+#navbar nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+/* The #navbar nav ul li class sets the display, line-height, margin, and font-weight of the list items within the unordered list. */
+
+#navbar nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 10px 5px;
+    font-weight: bold;
+}
+
+/* The #navbar nav ul li a class sets the color, font-size, padding, border-radius, text-transform, and transition of the anchor tags within the list items. */
+
+#navbar nav ul li a {
+
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    transition: 0.25s;
+}
+
+/* The #navbar a.active class changes the background color of the active anchor tag. */
+
+#navbar a.active {
+    background: rgb(117, 67, 255);
+    transition: .5s;
+}
+
+/* The #navbar a:hover class changes the background color and font-size of the anchor tag when the mouse hovers over it. */
+
+#navbar a:hover {
+    background: rgb(193, 173, 249);
+    transition: .25s;
+    font-size: 20px;
+}
+
+/* The #navbar .checkbtn class sets the font-size, color, float, line-height, margin-right, cursor, and display of the check button within the navbar. */
+
+#navbar .checkbtn {
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+/* The #navbar .sidenav class sets the height, width, position, z-index, top, left, background, overflow-x, padding-top, font-family, and transition of the side navigation. */
+
+#navbar .sidenav {
+    height: 45%;
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    top: 11%;
+    left: 0;
+    background: rgba(255, 255, 255, 0.5);
+    overflow-x: hidden;
+    padding-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.5s;
+}
+
+/* The #navbar .sidenav a, .dropdown-btn class sets the padding, font-family, color, font-size, display, border, background, width, text-align, cursor, and outline of the anchor tags and dropdown button within the side navigation. */
+
+#navbar .sidenav a,
+.dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 17px;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+/* The .sidenav:hover class changes the height, width, position, z-index, top, left, background, overflow-x, padding-top, font-family, transition, and color of the side navigation when the mouse hovers over it. */
+
+.sidenav:hover {
+    height: 45%;
+    width: 150px;
+    position: fixed;
+    z-index: 5;
+    top: 12.7%;
+    left: 0;
+    background: white;
+    overflow-x: hidden;
+    padding-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.5s;
+    color: darkslategray;
+}
+
+/* The #navbar #check class sets the display of the check within the navbar. */
+
+#navbar #check {
+    display: none;
+}
+
+/* The @media (max-width: 1025px) rule sets the font-size and padding-left of the logo and the font-size of the anchor tags within the list items when the viewport is 1025px or less. */
+
+@media (max-width: 1025px) {
+
+    #navbar label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    #navbar nav ul li a {
+        font-size: 16px;
+    }
+}
+
+/* The @media (max-width: 750px) rule changes the display of the check button, the position, width, height, background, top, left, text-align, transition of the unordered list, the display, margin, line-height of the list items, the font-size of the anchor tags within the list items, the background, color, font-size of the anchor tags when hovered over or active, and the left of the unordered list when the check is checked when the viewport is 750px or less. */
+
+@media (max-width: 750px) {
+
+    #navbar .checkbtn {
+        display: block;
+    }
+
+    #navbar ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    #navbar nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    #navbar nav ul li a {
+        font-size: 20px;
+    }
+
+    #navbar a:hover,
+    a.active {
+        background: none;
+        color: darkslategray;
+        font-size: 25px;
+    }
+
+    #navbar #check:checked~ul {
+        left: 0;
+    }
+
+}
+
+/* Importing the custom font */
+
+@font-face {
+
+    font-family: 'CreatoDisplay';
+    src: url('font/CreatoDisplay.ttf') format('truetype');
+}
+
+/* Main styles for the footer */
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    /* Increase the padding to make the footer thicker */
+    color: white;
+    z-index: 999;
+    /* Ensures the footer appears above other elements */
+    border-top-left-radius: 20px;
+    /* Rounded corners on the top left */
+    border-top-right-radius: 20px;
+    /* Rounded corners on the top right */
+    backdrop-filter: blur(5px);
+    /* Adds a subtle blur effect */
+    overflow: hidden;
+    /* Hide any overflowing content */
+    background: rgb(5, 64, 84);
+
+}
+
+/* Container to hold navigation links and social icons */
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* Allow items to wrap to a new line when window size is reduced */
+}
+
+/* Styling the navigation links */
+
+.footer-nav {
+    display: flex;
+}
+
+.footer-nav a {
+    font-family: 'CreatoDisplay', sans-serif;
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 13px;
+    /* Increase the font size to make the links bigger */
+    transition: transform 0.2s ease;
+    /* Add a transition for the hover effect */
+    padding: 5px;
+}
+
+.footer-nav a:hover {
+    transform: scale(1.5);
+    /* Expand the links to 1/4 of their size on hover */
+}
+
+/* Styling the social icons */
+
+.social-icons {
+    display: flex;
+    padding-right: 150px;
+}
+
+.social-link {
+    display: flex;
+    flex-direction: column;
+    /* Stack the icon and the name vertically */
+    align-items: center;
+    /* Center items horizontally */
+    margin-right: 10px;
+    /* Add extra padding between the icons */
+    transition: transform 0.2s ease;
+    position: relative;
+    /* Required for the round edge background */
+    padding-right: 10px;
+}
+
+.social-link img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    /* Add space between the icon and the name */
+    border-radius: 50%;
+    /* Rounded edges for the icons */
+    background-color: white;
+    /* White circle background for the icons */
+    padding: 5px;
+    /* Add padding inside the circle */
+    transition: 0.25s;
+}
+
+/* Expanding the social links on hover */
+
+.social-link:hover {
+    transform: scale(1.2);
+}
+
+.social-link span {
+    white-space: nowrap;
+    position: absolute;
+    bottom: 70%;
+    /* Position the text just above the icon */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    /* Adjust the font size as needed */
+    opacity: 0;
+    /* Hide the text by default */
+    transition: opacity 0.2s ease;
+    font-family: 'CreatoDisplay', sans-serif;
+    /* Use the same font as navigation links */
+    color: white;
+    /* Text color set to white */
+    padding: 5px 10px;
+    /* Add padding inside the text container */
+}
+
+.social-link:hover span {
+    opacity: 1;
+    /* Show the text on hover */
+}
+
+/* Adjust the value according to your content's height */
+
+.content {
+    margin-bottom: 100px;
+}
+
+.social-link:hover img {
+    transform: scale(0.33);
+    /* Scale the icons to one-third of their original size */
+    transition: transform 0.2s ease;
+    /* Smooth transition for the scaling effect */
+}
+
+.scroll-footer {
+    transition: transform 0.4s;
+}
+
+.scroll-up {
+    transform: translate3d(0, 0, 0);
+}
+
+.scroll-down {
+    transform: translate3d(0, 100%, 0);
+}
+
+/* Styling the copyright section */
+.copyright {
+    font-family: 'CreatoDisplay', sans-serif;
+    /* Set font-family */
+    font-size: smaller;
+    /* Adjust font size as needed */
+    display: flex;
+    align-items: right;
+    /* Center the content vertically */
+}
+
+/* Styling the copyright image */
+.copyright img {
+    width: 30px;
+    /* Set the desired width */
+    height: 30px;
+    /* Set the desired height */
+    border-radius: 50%;
+    /* Rounded edges for the image */
+    background-color: white;
+    /* White circle background for the image */
+    margin-right: 5px;
+    /* Add space between the image and text */
+    padding: 5px;
+    /* Add padding inside the circle */
+}
+
+/* Position the copyright text */
+.copyright p {
+    margin-right: 10px;
+    /* Add space between the image and text */
+    color: white;
+    /* Text color set to white */
+    margin-bottom: 0;
+    /* Remove default margin */
+}

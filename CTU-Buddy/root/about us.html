@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>About Us</title>
+    <link rel="icon" type="image/icon" href="../backend/Media/icons/ICON.svg">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="CTU">
+    <link rel="stylesheet" href="../backend/CSS/navStyle.css">
+
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow-x: hidden;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            margin-top: 45px;
+        }
+
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            height: 50px;
+            background-color: rgba(28, 27, 27, 0.824);
+            font-size: 36px;
+            color: aliceblue;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding-top: 15px;
+        }
+
+        .parralax {
+            position: relative;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        .parralax::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: blur(8px);
+        }
+
+        .parralax1::before {
+            background-image: url("../backend/Media/About_backgrounds/teach.jpg");
+        }
+
+        .parralax2::before {
+            background-image: url("../backend/Media/About_backgrounds/bckgrnd_3.jpg");
+        }
+
+        .parralax3::before {
+            background-image: url("../backend/Media/About_backgrounds/CTU_Campus.jpg");
+        }
+
+        .parralax4::before {
+            background-image: url("../backend/Media/About_backgrounds/pexels-kevin-ku-577585.jpg");
+        }
+
+
+        /* Style for the image inside the card */
+        .image-card {
+            display: flex;
+            position: relative;
+            left: 20vh;
+            /* Adjust the left position as needed */
+            top: calc(50% - 75px);
+            /* Adjust the top position to center the card */
+            width: 50%;
+            /* Set the width to 60% of the background image's width */
+            height: 50%;
+            /* Set the height to 60% of the background image's height */
+            background-color: rgba(255, 255, 255, 0.323);
+            /* Card background color */
+            border-radius: 10px;
+            /* Rounded corners for the card */
+            padding-left: 10px;
+            padding-top: 20px;
+            /* Padding inside the card */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.374);
+            /* Box shadow for the card */
+        }
+
+        .image-text {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: aliceblue;
+            font-size: medium;
+            font-weight: 250;
+        }
+
+        .text-content {
+            flex: 1;
+            padding-left: 20px;
+            font-size: medium;
+            font-weight: 250;
+        }
+
+        /* Style for the image inside the card */
+        .image-card img {
+            width: 75%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+            /* Rounded corners for the image */
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <article id="navbar">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="close">
+                    <div class="dropdown">
+                        <div class="sidenav">
+                            <a href="home.html">Home</a>
+                            <a href="timetable.html">TimeTable</a>
+                            <a href="discussion.html">Discussion</a>
+                            <a href="Resources.html">Resources</a>
+                            <a href="about us.html">About Us</a>
+                            <a href="contact_us.html">Contact Us</a>
+                        </div>
+                    </div>
+                </i>
+            </label>
+            <div>
+                <label class="logo">
+                    <a href="../root/home.html">
+                        <img src="..\backend\Media\CTU-PTE_MAIN-LOGO.png" alt="CTU_Logo" width="auto" height="100px">
+                    </a>
+                </label>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="timetable.html">Timetable</a></li>
+                    <li><a href="discussion.html">Discussion</a></li>
+                    <li><a href="Resources.html">Resources</a></li>
+                    <li><a href="about us.html" class="active">About Us</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </article>
+
+    <div class="parralax parralax1">
+        <!-- Add the image card for the first image -->
+        <div class="content">Mission</div>
+        <div class="image-card">
+            <div class="image-text">
+                <img src="../backend/Media/About_backgrounds/teach.jpg" alt="Image 1">
+                <div class="text-content">
+                    <h1>Mission of CTU College:</h1>
+                    <p>"To lead South Africa in technical education excellence by providing cutting-edge,
+                        business-focused programs that provide learners
+                        with the abilities required in today's dynamic tech environment.
+                        In order to develop future technological and industry leaders, we are dedicated to quality,
+                        ethics, and student achievement.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="parralax parralax2">
+        <!-- Add the image card for the second image -->
+        <div class="content">Vision</div>
+        <div class="image-card">
+            <div class="image-text">
+                <img src="../backend/Media/About_backgrounds/bckgrnd_3.jpg" alt="Image 3">
+                <div class="text-content">
+                    <h1>Vision Of CTU</h1>
+                    <p>CTU's vision is to excel in technical education, and their dedication to this goal is inspiring.
+                        Similarly,<br>
+                        I aspire to excel in my endeavors, aligning with CTU's commitment to continuous learning and
+                        innovation. We both understand that success means staying at the top through adaptability and
+                        dedication.<br>
+                        CTU's courses equip students for excellence, and together, we envision a future where excellence
+                        becomes a way of life.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="parralax parralax3">
+        <!-- Add the image card for the second image -->
+        <div class="content">About CTU</div>
+        <div class="image-card">
+            <div class="image-text">
+                <img src="../backend/Media/About_backgrounds/CTU_Campus.jpg" alt="Image 2">
+                <div class="text-content">
+                    <h1>About CTU</h1>
+                    <p>CTU College in South Africa is renowned for its excellence in technical education.
+                        With a visionary approach,
+                        it prepares students for the modern workforce and empowers them for success in technology and
+                        industry.
+                        For top-notch education in South Africa, CTU College stands out.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="parralax parralax4">
+        <!-- Add the image card for the second image -->
+        <div class="content">Meet the Developers</div>
+        <div class="image-text">
+            <div class="image-card">
+                <div class="image-text">
+                    <img src="../backend/Media/About_backgrounds/pexels-kevin-ku-577585.jpg" alt="Image 4">
+                    <div class="text-content">
+                        <h1>Meet the Developers</h1>
+                        <p>CTU and I share a commitment to excellence, continuous learning, and staying at the forefront
+                            of our fields. We both believe
+                            in the importance of not only reaching the top but also staying there through adaptability
+                            and dedication. CTU's courses empower
+                            students to achieve their highest
+                            potential, and together, we envision a future where excellence is a way of life.</p>
+                        <a href="DevTeam.html" class="button">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <article id="footer">
+            <footer class="footer scroll-footer">
+                <div class="footer-content">
+                    <!-- Footer navigation links -->
+                    <div class="footer-nav">
+                        <a href="home.html">Home</a>
+                        <a href="timetable.html">Timetable</a>
+                        <a href="discussion.html">Discussion</a>
+                        <a href="Resources.html">Resources</a>
+                        <a href="about us.html">About Us</a>
+                        <a href="contact_us.html">Contact Us</a>
+                    </div>
+                    <div class="copyright">
+                        <p>The Fundementalists</p>
+                        <p>2023</p>
+                        <img src="../backend/Media/copyright-solid.svg" alt="copyright">
+                    </div>
+                    <!-- Social media links -->
+                    <div class="social-icons">
+                        <a href="#" class="social-link">
+                            <img src="../backend/Media/facebook.svg" alt="Facebook">
+                            <span>Facebook</span>
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="../backend/Media/instagram.svg" alt="Instagram">
+                            <span>Instagram</span>
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="../backend/Media/twitter.svg" alt="Twitter">
+                            <span>Twitter</span>
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </article>
+</body>
+
+</html>

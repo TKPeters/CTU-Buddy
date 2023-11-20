@@ -1,0 +1,25 @@
+const tabs = document.querySelectorAll('[data-tab-target]')
+const tabContents = document.querySelectorAll('[data-tab-content]')
+
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        const target = document.querySelector(tab.dataset.tabTarget)
+        tabContents.forEach(tabContent => {
+            tabContent.classList.remove('actives')
+        })
+        tabs.forEach(tab => {
+            tab.classList.remove('actives')
+        })
+        tab.classList.add('actives')
+        target.classList.add('actives')
+    })
+})
+
+
+$(document).ready(function () {
+    $('form input').change(function () {
+        $('form p').text(this.files.length + " file(s) selected");
+    });
+});
+
+

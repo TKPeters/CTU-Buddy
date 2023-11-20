@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/icon" href="../backend/Media/icons/ICON.svg">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="../backend/CSS/contact_styles.css">
+  <link rel="stylesheet" href="../backend/CSS/navStyle.css">
+  <link rel="stylesheet" href="../backend/CSS/background.css">
+  <script defer src="../backend/JavaScript/Contact Us.js"></script>
+
+  <title>Contact Us</title>
+</head>
+
+<body>
+  <!-- NavBar -->
+  <article id="navbar">
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="close">
+          <div class="dropdown">
+            <div class="sidenav">
+              <a href="home.html">Home</a>
+              <a href="timetable.html">TimeTable</a>
+              <a href="discussion.html">Discussion</a>
+              <a href="Resources.html">Resources</a>
+              <a href="about us.html">About Us</a>
+              <a href="contact_us.html">Contact Us</a>
+            </div>
+          </div>
+        </i>
+      </label>
+      <div>
+        <label class="logo">
+          <a href="../root/home.html">
+            <img src="..\backend\Media\CTU-PTE_MAIN-LOGO.png" alt="CTU_Logo" width="auto" height="100px">
+          </a>
+        </label>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="timetable.html">Timetable</a></li>
+          <li><a href="discussion.html">Discussion</a></li>
+          <li><a href="Resources.html">Resources</a></li>
+          <li><a href="about us.html">About Us</a></li>
+          <li><a href="contact_us.html" class="active">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </article>
+
+  <div class="bg-animation">
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="contactUs">
+
+    <div class="box">
+      <!-- Contact Box -->
+      <div class="contact form">
+        <h3>Send a Message</h3>
+        <form action="../backend/Database_Backend/Contact_Us.php" method="post">
+          <div class="formBox">
+            <div class="row50">
+              <div class="inputBox">
+                <span>First Name</span>
+                <input type="text" placeholder="First Name">
+              </div>
+              <div class="inputBox">
+                <span>Last Name</span>
+                <input type="text" placeholder="Last Name">
+              </div>
+            </div>
+
+            <div class="row50">
+              <div class="inputBox">
+                <span>Email</span>
+                <input type="text" placeholder="example@email.com">
+              </div>
+
+              <div class="inputBox">
+                <span>Mobile</span>
+                <input type="text" placeholder="+27 12 345 6789">
+              </div>
+            </div>
+
+            <div class="row100">
+              <div class="dropdown-container">
+                <div class="inputBox">
+                  <label for="feedbackType">Feedback Type</label>
+                  <select class="dropdown-menu" name="feedbackType">
+                    <option value="inquiry">Inquiry</option>
+                    <option value="suggestion">Suggestion</option>
+                    <option value="feedback">Feedback</option>
+                  </select>
+                </div>
+                <div class="inputBox">
+                  <label for="team_members">Fundamentalist</label>
+                  <select class="dropdown-menu" name="teamembers">
+                    <option value="Null">Select A Developer You Wish To Contact</option>
+                    <option value="Tyrell">Tyrell Peters 20230198</option>
+                    <option value="Jordan">Jordan Tobias 20230202</option>
+                    <option value="Muhammed">Muhammed Ally 20230494</option>
+                    <option value="Joshua">Joshua Koch 20230207</option>
+                    <option value="Tadiwa">Tadiwa Machapu 20232219</option>
+                    <option value="Tshepiso">Tshepiso Mathule 20230199</option>
+                    <option value="Timothy">Timothy Cordor 20230200</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="row100">
+              <div class="inputBox">
+                <span>Message</span>
+                <textarea placeholder="We're eager to hear from you..."></textarea>
+              </div>
+            </div>
+
+            <div class="row100">
+              <div class="inputBox">
+                <button type="submit">Send
+                  <img src="../backend\Media\paper-plane-solid.svg" alt="Send Icon">
+                </button>
+              </div>
+            </div>
+            <!-- Subscribe Button -->
+            <div class="row100">
+              <div class="inputBox">
+                <button type="button" id="subscribeBtn">Subscribe</button>
+              </div>
+            </div>
+
+            <!-- Modal -->
+            <div id="subscribeModal" class="modal">
+              <div class="modal-content">
+                <span class="close" id="closeModal">&times;</span>
+                <h3>Subscribe</h3>
+                <form>
+                  <div class="formBox">
+                    <!-- Add fields for student name, email, and student number here -->
+                    <div class="row50">
+                      <div class="inputBox">
+                        <span>Student Name</span>
+                        <input type="text" placeholder="Student Name">
+                      </div>
+                      <div class="inputBox">
+                        <span>Surname</span>
+                        <input type="text" placeholder="Surname">
+                      </div>
+                    </div>
+                    <div class="row50">
+                      <div class="inputBox">
+                        <span>Email</span>
+                        <input type="text" placeholder="example@email.com">
+                      </div>
+                      <div class="inputBox">
+                        <span>Student Number</span>
+                        <input type="text" placeholder="Student Number">
+                      </div>
+                    </div>
+                    <div class="row100">
+                      <div class="inputBox">
+                        <button type="submit">Subscribe</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+
+          </div>
+        </form>
+      </div>
+
+      <!-- Info Box -->
+      <div class="contact info">
+        <h3>Contact Info</h3>
+        <div class="infoBox">
+          <div>
+            <img src="../backend\Media\location-dot-solid.svg" alt="Location Icon">
+            <p>59, The Village @ Horizon, Sonop St, Horizon, Roodepoort, 1730<br></p>
+          </div>
+          <div>
+            <img src="../backend\Media\envelope-solid.svg" alt="Mail Icon">
+            <a href="mailto:studentservice@ctutraing.co.za">studentservice@ctutraing.co.za</a>
+          </div>
+          <div>
+            <img src="../backend\Media\phone-solid.svg" alt="Mail Icon">
+            <a href="tel:0861100395">086 110 0395</a>
+          </div>
+
+          <!-- Social Media Links -->
+          <ul class="sci">
+            <li>
+              <img src="../backend\Media\facebook.svg" alt="Facebook Icon">
+              <span>Facebook</span>
+            </li>
+            <li>
+              <img src="../backend\Media\twitter.svg" alt="Twitter Icon">
+              <span>Twitter</span>
+            </li>
+            <li>
+              <img src="../backend\Media\instagram.svg" alt="Instagram Icon">
+              <span>Instagram</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Map Box -->
+      <div class="contact map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14639.802038403035!2d27.866840380814743!3d-26.14701352244324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e959f7b7787c027%3A0xd1450a9cd56b62ed!2sCTU%20Training%20Solutions%20Roodepoort!5e0!3m2!1sen!2sza!4v1691002047316!5m2!1sen!2sza"
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <article id="footer">
+    <footer class="footer scroll-footer">
+      <div class="footer-content">
+        <!-- Footer navigation links -->
+        <div class="footer-nav">
+          <a href="home.html">Home</a>
+          <a href="timetable.html">Timetable</a>
+          <a href="discussion.html">Discussion</a>
+          <a href="Resources.html">Resources</a>
+          <a href="about us.html">About Us</a>
+          <a href="contact_us.html">Contact Us</a>
+        </div>
+        <div class="copyright">
+          <p>The Fundementalists</p>
+          <p>2023</p>
+          <img src="../backend/Media/copyright-solid.svg" alt="copyright">
+        </div>
+        <!-- Social media links -->
+        <div class="social-icons">
+          <a href="#" class="social-link">
+            <img src="../backend/Media/facebook.svg" alt="Facebook">
+            <span>Facebook</span>
+          </a>
+          <a href="#" class="social-link">
+            <img src="../backend/Media/instagram.svg" alt="Instagram">
+            <span>Instagram</span>
+          </a>
+          <a href="#" class="social-link">
+            <img src="../backend/Media/twitter.svg" alt="Twitter">
+            <span>Twitter</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </article>
+</body>
+
+</html>

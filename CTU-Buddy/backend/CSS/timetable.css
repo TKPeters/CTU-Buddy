@@ -1,0 +1,247 @@
+/* This part of the CSS is setting some basic styles for the entire body of the document */
+body {
+	font: 16px Helvetica, Sans-Serif;
+	/* Set font and size for the entire document */
+	background: url(http://dt249.com/images/bg.jpg) top center no-repeat #545454;
+	/* Set background image and color */
+	height: 30vh;
+	margin-top: 0;
+}
+
+/* The next section sets styles for links - this includes the color and font and also specifies that there should be no underline */
+a:link,
+a:visited,
+a:hover {
+	font: 30px Helvetica, San-Serif #FFFFFF;
+	/* Set font and color for links */
+	text-decoration: none;
+	/* Remove underlines from links */
+}
+
+/* This sets the font for the main id */
+#main {
+	font: 30px Helvetica, San-Serif #FFFFFF;
+	/* Set font and color for elements with id="main" */
+	text-decoration: none;
+	/* Remove underlines */
+}
+
+/* This is a CSS Reset. It's helping to make sure that the styles apply consistently across different browsers */
+* {
+	padding: 0;
+	/* Reset padding to 0 */
+}
+
+/* These styles are for different heading levels. They control things like font size, spacing, and color */
+
+h1 {
+	margin: 0 0 16px 0;
+	/* Set margins for h1 elements */
+	padding: 0 0 16px 0;
+	/* Set padding for h1 elements */
+	font-size: 42px;
+	/* Set font size */
+	font-weight: bold;
+	/* Set font weight to bold */
+	letter-spacing: -2px;
+	/* Adjust letter spacing */
+	border-bottom: 1px solid #CCCCCC;
+	/* Add a bottom border */
+	color: #777777;
+	/* Set text color */
+	display: block;
+	/* Make it a block element */
+}
+
+h4 {
+	margin: 0 0 16px 0;
+	padding: 0 0 16px 0;
+	font-size: 42px;
+	font-weight: bold;
+	letter-spacing: -2px;
+	border-bottom: 1px solid #CCCCCC;
+	color: #CCCCCC;
+	display: block;
+}
+
+h2 {
+	font-size: 20px;
+	margin: 0 0 6px 0;
+	display: block;
+}
+
+h3 {
+	font-size: 16px;
+	margin: 0 0 6px 0;
+	color: #3399FF;
+	display: block;
+}
+
+h5 {
+	display: block;
+	width: 200px;
+	height: 76px;
+	margin: 15px auto;
+	font: #FFFFFF;
+	text-align: center;
+}
+
+.calendar {
+	width: 90%;
+	margin: 0 auto;
+	display: block;
+	min-height: 200px;
+	padding: 12px 0 0 20px;
+	align-items: center;
+}
+
+.calendar img {
+	width: "20vh";
+	height: "16vh";
+	border-radius: 20px;
+}
+
+li {
+	list-style: none;
+}
+
+p.link {
+	text-align: center;
+	display: block;
+}
+
+li li {
+	width: 6em;
+	height: 6em;
+	float: left;
+	margin: .2em;
+	padding: .2em;
+	overflow: auto;
+	background: url(http://dt249.com/images/day-bg.png) bottom right no-repeat;
+}
+
+li li p {
+	font-size: .7em;
+	display: block;
+}
+
+li li ol {
+	width: auto;
+}
+
+li li ul li,
+li li ol li {
+	font-size: .7em;
+	display: block;
+	height: auto;
+	width: auto;
+	background: none;
+	margin: 0;
+	padding: .2em 0;
+	float: none;
+}
+
+li#lastmonth li,
+li#nextmonth li {
+	background: url(http://dt249.com/images/day-bg-inactive.png);
+}
+
+#month {
+	width: 100%;
+	height: auto;
+	margin: 20px;
+	clear: left;
+	padding: 20px 20px 20px 20px;
+	float: left;
+}
+
+#main,
+#card,
+#card2,
+#card3 {
+	width: 90%;
+	/* Make these containers fluid within their parent */
+}
+
+#card,
+#card2,
+#card3 {
+	font: 16px Helvetica, Sans-Serif;
+	line-height: 24px;
+	height: 100%;
+	width: 90%;
+	margin: 20px;
+	background: #F0F0F0;
+	clear: left;
+	padding: 20px 20px 20px 20px;
+	float: left;
+	display: block;
+	border-radius: 20px;
+}
+
+#card2 {
+	height: 350px;
+}
+
+#card3 {
+	background-color: #FFFF00;
+	-webkit-transform: rotate(2deg);
+	/* Safari */
+	transform: rotate(2deg);
+}
+
+#card3:hover {
+	background-color: #FFCCFF;
+	-webkit-transform: rotate(0deg);
+	/* Safari */
+	transform: rotate(0deg);
+	box-shadow: 0px 0px 10px 5px lightblue;
+}
+
+/*calendarlogo*******/
+
+#cardlogo {
+	fill: white
+}
+
+#cardlogo:hover,
+#calendarlogo:hover {
+	fill: #3399FF
+}
+
+
+.fil1 {
+	fill: white
+}
+
+.fil2 {
+	fill: #888888
+}
+
+.fil3 {
+	color: #777777;
+}
+
+@media (max-width: 768px) {
+
+	/* Adjust styles for screens up to 768px wide */
+	body {
+		font-size: 14px;
+	}
+
+	h1 {
+		font-size: 32px;
+	}
+}
+
+@media (max-width: 480px) {
+
+	/* Adjust styles for screens up to 480px wide (e.g., mobile devices) */
+	body {
+		font-size: 12px;
+	}
+
+	h1 {
+		font-size: 24px;
+	}
+}

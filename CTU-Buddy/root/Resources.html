@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources</title>
+    <link rel="icon" type="image/icon" href="../backend/Media/icons/ICON.svg">
+
+
+    <link rel="stylesheet" href="../backend/CSS/Resource.css">
+    <link rel="stylesheet" href="../backend/CSS/navStyle.css">
+    <link rel="stylesheet" href="../backend/CSS/background.css">
+    <script src="../backend/JavaScript/scroll-footer.js"></script>
+    <script defer src="../backend/JavaScript/Background_selection.js"></script>
+    <script src="../backend/JavaScript/resource.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <!-- Navigation bar -->
+        <article id="navbar">
+            <nav>
+                <!-- Checkbox for the dropdown menu -->
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <!-- Dropdown menu -->
+                    <i class="close">
+                        <div class="dropdown">
+                            <div class="sidenav">
+                                <!-- Navigation links -->
+                                <a href="home.html">Home</a>
+                                <a href="timetable.htmls">TimeTable</a>
+                                <a href="discussion.html">Discussion</a>
+                                <a href="Resources.html">Resources</a>
+                                <a href="about us.html">About us</a>
+                                <a href="contact_us.html">Contact Us</a>
+                            </div>
+                        </div>
+                    </i>
+                </label>
+                <div>
+                    <!-- Logo -->
+                    <label class="logo">
+                        <a href="../root/home.html"> <img src="..\backend\Media\CTU-PTE_MAIN-LOGO.png" alt="CTU_Logo"
+                                width="auto" height="100px"></a>
+                    </label>
+                    <!-- Navigation links -->
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="timetable.html">Timetable</a></li>
+                        <li><a href="discussion.html">Discussion</a></li>
+                        <li><a href="Resources.html" class="active">Resources</a></li>
+                        <li><a href="about us.html">About Us</a></li>
+                        <li><a href="contact_us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </article>
+
+        <!-- Background animation -->
+        <div id="bg-animation">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+
+        <ul class="tabs">
+            <li data-tab-target="#home" class="actives tab">Discover</li>
+            <li data-tab-target="#upload" class="tab">Upload</li>
+            <li data-tab-target="#search" class="tab">Search</li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="home" data-tab-content class="actives">
+
+
+                <div class="wrapper">
+                    <h1>Downloads</h1>
+                    <div class="cols">
+                        <div class="col" ontouchstart="this.classList.toggle('hover');">
+                            <div class="container">
+                                <div class="front" style="background-image: url(https://unsplash.it/500/500/)">
+                                    <div class="inner">
+                                        <p>DLP</p>
+                                        <span>Digital literacy and proficiency
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div class="inner">
+                                        <p>Download the study guide<br><a
+                                                href="https://learning.oreilly.com/library/view/digital-literacy-for/9781118962879/">Download</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" ontouchstart="this.classList.toggle('hover');">
+                            <div class="container">
+                                <div class="front" style="background-image: url(https://unsplash.it/511/511/)">
+                                    <div class="inner">
+                                        <p>PPD</p>
+                                        <span>Principles of program Design</span>
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div class="inner">
+                                        <p>Download the study guide<br><a
+                                                href="https://learning.oreilly.com/library/view/principles-of-concurrent/9780321312839/">Download</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" ontouchstart="this.classList.toggle('hover');">
+                            <div class="container">
+                                <div class="front" style="background-image: url(https://unsplash.it/502/502/)">
+                                    <div class="inner">
+                                        <p>PRP</p>
+                                        <span>Programming with python</span>
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div class="inner">
+                                        <p>Download the study guide<br><a
+                                                href="https://learning.oreilly.com/library/view/introducing-python-2nd/9781492051374/">Download</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" ontouchstart="this.classList.toggle('hover');">
+                            <div class="container">
+                                <div class="front" style="background-image: url(https://unsplash.it/503/503/)">
+                                    <div class="inner">
+                                        <p>CAF</p>
+                                        <span>Computer Architecture</span>
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div class="inner">
+                                        <p>Download the study guide<br><a
+                                                href="https://learning.oreilly.com/library/view/modern-computer-architecture/9781803234519/">Download</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" ontouchstart="this.classList.toggle('hover');">
+                            <div class="container">
+                                <div class="front" style="background-image: url(https://unsplash.it/504/504/)">
+                                    <div class="inner">
+                                        <p>RD</p>
+                                        <span>Robotics Development</span>
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div class="inner">
+                                        <p>Download the study guide<br><a
+                                                href="https://learning.oreilly.com/library/view/learn-robotics-programming/9781789340747/">Download</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" ontouchstart="this.classList.toggle('hover');">
+                            <div class="container">
+                                <div class="front" style="background-image: url(https://unsplash.it/505/505/)">
+                                    <div class="inner">
+                                        <p>ENA</p>
+                                        <span>Ethics and Network Architecture</span>
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div class="inner">
+                                        <p>Download the study guide<br><a
+                                                href="https://learning.oreilly.com/library/view/python-ethical-hacking/9781838829506/">Download</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" ontouchstart="this.classList.toggle('hover');">
+                            <div class="container">
+                                <div class="front" style="background-image: url(https://unsplash.it/506/506/)">
+                                    <div class="inner">
+                                        <p>CF</p>
+                                        <span>Cloud Fundementals</span>
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div class="inner">
+                                        <p>Download the study guide<br><a
+                                                href="https://learning.oreilly.com/library/view/learning-microsoft-azure/9781098113315/">Download</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" ontouchstart="this.classList.toggle('hover');">
+                            <div class="container">
+                                <div class="front" style="background-image: url(https://unsplash.it/508/508/)">
+                                    <div class="inner">
+                                        <p>CW</p>
+                                        <span>Core Web</span>
+                                    </div>
+                                </div>
+                                <div class="back">
+                                    <div class="inner">
+                                        <p>Download the study guide<br><a
+                                                href="https://learning.oreilly.com/library/view/introducing-python-2nd/9781492051374/">Download</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Upload_panel">
+            <div id="upload" data-tab-content>
+                <form action="upload.php" method="POST" enctype="multipart/form-data">
+                    <input type="file" name="file" multiple>
+                    <p>Drag your files here or click here</p>
+                    <button type="submit" class="btn">Upload</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="search" data-tab-content>
+            <article>
+                <div class="flexbox">
+                    <div class="search">
+                        <style>
+                            html,
+                            body {
+                                width: 100%;
+                                height: 100%;
+                            }
+
+                            .flexbox {
+                                background: rgba(0, 242, 255, 0.523);
+                                opacity: 10;
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border-radius: 25px;
+                                margin-top: 25px;
+                            }
+
+                            .search {
+                                margin: 20px;
+                            }
+
+                            .search>h3 {
+                                font-weight: normal;
+                            }
+
+                            .search>h1,
+                            .search>h3 {
+                                color: white;
+                                margin-bottom: 15px;
+                                text-shadow: 0 1px #b90f31;
+                            }
+
+                            .search>div {
+                                display: inline-block;
+                                position: relative;
+                                filter: drop-shadow(0 1px #e12e05)
+                            }
+
+                            .search>div:after {
+                                content: "";
+                                background: white;
+                                width: 4px;
+                                height: 25px;
+                                position: absolute;
+                                top: 20px;
+                                left: 30px;
+                                transform: rotate(135deg)
+                            }
+
+                            .search>div>input {
+                                color: white;
+                                font-size: 16px;
+                                background: transparent;
+                                width: 25px;
+                                height: 25px;
+                                padding: 10px;
+                                border: solid 3px white;
+                                outline: none;
+                                border-radius: 35px;
+                                transition: width 0.5s;
+                            }
+
+                            .search>div>input::placeholder {
+                                color: #efefef;
+                                opacity: 0;
+                                transition: opacity 150ms ease-out;
+                            }
+
+                            .search>div>input:focus::placeholder {
+                                opacity: 1;
+                            }
+
+                            .search>div>input:focus,
+                            .search>div>input:not(:placeholder-shown) {
+                                width: 250px;
+                            }
+                        </style>
+                        <h4>Search For Resources</h4>
+                        <h3>Click the search icon, and type what you searching for</h3>
+                        <div>
+                            <input type="text" placeholder="Search.." required>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        </div>
+
+        <!-- Footer -->
+        <article id="footer">
+            <footer class="footer scroll-footer">
+                <div class="footer-content">
+                    <!-- Footer navigation links -->
+                    <div class="footer-nav">
+                        <a href="home.html">Home</a>
+                        <a href="timetable.html">Timetable</a>
+                        <a href="discussion.html">Discussion</a>
+                        <a href="Resources.html">Resources</a>
+                        <a href="about us.html">About Us</a>
+                        <a href="contact_us.html">Contact Us</a>
+                    </div>
+                    <div class="copyright" style="font-size: small;">
+                        <p style="font-size: small;">The Fundementalists</p>
+                        <p style="font-size: small;">2023</p>
+                        <img src="../backend/Media/copyright-solid.svg" alt="copyright">
+                    </div>
+                    <!-- Social media links -->
+                    <div class="social-icons">
+                        <a href="#" class="social-link">
+                            <img src="../backend/Media/facebook.svg" alt="Facebook">
+                            <span>Facebook</span>
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="../backend/Media/instagram.svg" alt="Instagram">
+                            <span>Instagram</span>
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="../backend/Media/twitter.svg" alt="Twitter">
+                            <span>Twitter</span>
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </article>
+</body>
+
+</html>

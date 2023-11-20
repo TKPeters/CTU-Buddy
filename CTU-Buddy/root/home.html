@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- The title of the webpage -->
+    <title>Home page</title>
+
+    <!-- Meta tags for character encoding, compatibility, and viewport settings -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="CTU">
+    <link rel="icon" type="image/icon" href="../backend/Media/icons/ICON.svg">
+
+    <!-- Linking to external files -->
+    <link rel="stylesheet" href="../backend/CSS/Home.css">
+    <link rel="stylesheet" href="../backend/CSS/background.css">
+    <link rel="stylesheet" href="../backend/CSS/navStyle.css">
+    <link rel="stylesheet" href="../backend/CSS/Home.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <script src="../backend/JavaScript/scroll-footer.js"></script>
+    <script defer src="../backend/JavaScript/Background_selection.js"></script>
+
+<body>
+
+    <div class="datetime animated-text">
+        <div class="time"></div>
+        <div class="date"></div>
+    </div>
+
+</body>
+
+</head>
+
+<script>
+    const timeElement = document.querySelector(".time");
+    const dateElement = document.querySelector(".date");
+
+    /**
+     * @param {Date} date
+     */
+    function formatTime(date) {
+        const hours24 = date.getHours();
+        const minutes = date.getMinutes();
+
+        return `${hours24.toString().padStart(2, "0")}:${minutes.toString().padStart(2, "0")}`;
+    }
+
+
+    /**
+     * @param {Date} date
+     */
+    function formatDate(date) {
+        const DAYS = [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+        ];
+        const MONTHS = [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"
+        ];
+
+        return `${DAYS[date.getDay()]}, ${MONTHS[date.getMonth()]
+            } ${date.getDate()} ${date.getFullYear()}`;
+    }
+
+    setInterval(() => {
+        const now = new Date();
+
+        timeElement.textContent = formatTime(now);
+        dateElement.textContent = formatDate(now);
+    }, 200);
+
+</script>
+
+<!-- Navigation bar -->
+<article id="navbar">
+    <nav>
+        <!-- Checkbox for the dropdown menu -->
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <!-- Dropdown menu -->
+            <div class="close">
+                <div class="dropdown">
+                    <!-- Navigation links -->
+                    <a href="home.html">Home</a>
+                    <a href="timetable.html">TimeTable</a>
+                    <a href="discussion.html">Discussion</a>
+                    <a href="Resources.html">Resources</a>
+                    <a href="about us.html">About us</a>
+                    <a href="contact_us.html">Contact Us</a>
+                </div>
+            </div>
+        </label>
+        <div>
+            <!-- Logo -->
+            <span class="logo">
+                <a href="../root/home.html"><img src="../backend/Media/CTU-PTE_MAIN-LOGO.png" alt="CTU_Logo"
+                        width="auto" height="100px"></a>
+            </span>
+            <!-- Navigation links -->
+            <ul>
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="timetable.html">Timetable</a></li>
+                <li><a href="discussion.html">Discussion</a></li>
+                <li><a href="Resources.html">Resources</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+</article>
+
+<!-- Background animation -->
+<div id="bg-animation">
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+</div>
+
+<div class="centered-text">
+    <h1 class="animated-text">Welcome CTU-Buddy</h1>
+</div>
+
+<div class="centered-button ">
+    <div class="Cta-button_container animated-text">
+        <a href="#main_content" class="CTA-Button button-pulse">
+            Ready to begin
+        </a>
+    </div>
+</div>
+
+
+
+<!-- Panels for Images and Videos -->
+<div class="panel-container" id="main_content">
+    <div class="panel">
+        <!-- Add your first image or video here -->
+        <img src="../backend/Media/CTU-sports-day.png" alt="Image 1" style="width:30%;height:120%;"
+            style="border-radius: 25px;">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aliquam accusantium doloribus est
+            impedit natus sit recusandae in veniam porro,
+            aut maiores ex sint, excepturi debitis reiciendis,
+            rem ipsam illo?</p> <!-- Add your text here -->
+    </div>
+    <div class="panel">
+        <!-- Add your first image or video here -->
+        <img src="../backend/Media/CTU_4IR.png" alt="Image 1" style="width:30%;height:120%;"
+            style="border-radius: 25px;">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aliquam accusantium doloribus est
+            impedit natus sit recusandae in veniam porro,
+            aut maiores ex sint, excepturi debitis reiciendis,
+            rem ipsam illo?</p> <!-- Add your text here -->
+    </div>
+
+    <div class="panel">
+        <!-- Add your second image or video here -->
+        <video width="320" height="240" loop autoplay style="border-radius: 25px;">
+            <source src="../backend/Media/Video/video (240p).mp4" type="video/mp4">
+        </video>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, natus voluptatum sit ipsam omnis eos fuga
+            optio! Perferendis autem libero placeat incidunt ipsa adipisci nisi nam aliquid veritatis! Velit, rem.</p>
+    </div>
+
+    <div class="card-display">
+        <div class="card">
+            <div class="card-content">
+                <h3 class="card-title">Reviews</h3>
+                <h4 class="card-subtitle" style="font-size: 15px;"></h4>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h3 class="card-title">Reviews</h3>
+                <h4 class="card-subtitle" style="font-size: 15px;"></h4>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h3 class="card-title">Reviews</h3>
+                <h4 class="card-subtitle" style="font-size: 15px;"></h4>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        const subtitles = Array.from(document.getElementsByClassName("card-subtitle"));
+        const createWord = (text, index) => {
+            const word = document.createElement("span");
+            word.innerHTML = `${text} `;
+            word.classList.add("card-subtitle-word");
+            word.style.transitionDelay = `${index * 40}ms`;
+            return word;
+        }
+
+        const addWord = (subtitle, text, index) => subtitle.appendChild(createWord(text, index));
+        const createSubtitle = subtitle => {
+            return text => text.split(" ").forEach((word, index) => addWord(subtitle, word, index));
+        };
+
+        subtitles.forEach(subtitle => createSubtitle(subtitle)("Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, natus voluptatum sit ipsam omnis eos fuga optio! Perferendis autem libero placeat incidunt ipsa adipisci nisi nam aliquid veritatis! Velit, rem."));
+    </script>
+
+    <!-- Footer -->
+    <article id="footer">
+        <footer class="footer scroll-footer">
+            <div class="footer-content">
+                <!-- Footer navigation links -->
+                <div class="footer-nav">
+                    <a href="home.html">Home</a>
+                    <a href="timetable.html">Timetable</a>
+                    <a href="discussion.html">Discussion</a>
+                    <a href="Resources.html">Resources</a>
+                    <a href="about us.html">About Us</a>
+                    <a href="contact_us.html">Contact Us</a>
+                </div>
+                <div class="copyright">
+                    <p>The Fundementalists</p>
+                    <p>2023</p>
+                    <img src="../backend/Media/copyright-solid.svg" alt="copyright">
+                </div>
+                <!-- Social media links -->
+                <div class="social-icons">
+                    <a href="#" class="social-link">
+                        <img src="../backend/Media/facebook.svg" alt="Facebook">
+                        <span>Facebook</span>
+                    </a>
+                    <a href="#" class="social-link">
+                        <img src="../backend/Media/instagram.svg" alt="Instagram">
+                        <span>Instagram</span>
+                    </a>
+                    <a href="#" class="social-link">
+                        <img src="../backend/Media/twitter.svg" alt="Twitter">
+                        <span>Twitter</span>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </article>
+
+    </body>
+
+</html>

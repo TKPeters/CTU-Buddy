@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Login</title>
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="../backend/CSS/login.css">
+    <link rel="stylesheet" href="../backend/CSS/background.css">
+
+    <!-- JavaScript files -->
+    <script defer src="../backend/JavaScript/Login form.js"></script>
+    <script defer src="../backend/JavaScript/Background_selection.js"></script>
+</head>
+
+<body>
+    <!-- Login box -->
+    <div class="box">
+        <div class="wrapper ">
+            <div id="error"></div>
+            <form id="form" action="/" method="get">
+                <h2>Login</h2>
+
+                <!-- Username input -->
+                <div class="input-box">
+                    <input type="text" placeholder="Username" id="username" required>
+                    <div class="circle"><img src='../backend/Media/icons/user-regular.svg'></div>
+                </div>
+
+                <!-- Password input -->
+                <div class="input-box">
+                    <input type="password" placeholder="Password" id="password" required>
+                    <span id="password-error" class="error"></span>
+                    <div class="circle"><img src='../backend/Media/icons/lock-solid.svg'></div>
+                </div>
+
+                <!-- Login button -->
+                <button type="submit" class="btn">Login</button>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- Waves background -->
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+
+</body>
+
+</html>

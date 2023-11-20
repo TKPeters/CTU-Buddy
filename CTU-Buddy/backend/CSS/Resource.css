@@ -1,0 +1,561 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    /* Remove default margin from all elements */
+    padding: 0;
+    /* Remove default padding from all elements */
+    box-sizing: border-box;
+    /* Include padding and border in element's total width and height */
+}
+
+/* Global styling */
+body {
+    font-family: 'CreatoDisplay', sans-serif;
+    /* Set the font family for the body */
+    background-color: #f4f4f4;
+    /* Set the background color for the body */
+}
+
+p {
+    font-size: 30px;
+    /* Set the font size for paragraphs */
+}
+
+/* Header styling */
+header {
+    /* text-align: center; */
+    /* Center the text in the header */
+    padding: 150px;
+    /* Add padding to the header */
+    position: relative;
+    /* Set the position of the header to relative */
+}
+
+.card-container {
+    display: flex;
+    /* Use flexbox for the card container */
+    flex-wrap: wrap;
+    /* Allow the cards to wrap onto the next line */
+    justify-content: space-around;
+    /* Distribute the cards evenly with space around them */
+}
+
+h3 {
+    padding: 35px;
+    /* Add padding to h3 elements */
+    color: #ffffff;
+    /* Set the text color of h3 elements */
+}
+
+main {
+    display: flex;
+    /* Use flexbox for the main section */
+    flex-direction: column;
+    /* Arrange the items in the main section in a column */
+    align-items: center;
+    /* Center the items in the main section horizontally */
+    justify-content: center;
+    /* Center the items in the main section vertically */
+    font-family: 'CreatoDisplay', sans-serif;
+    /* Set the font family for the main section */
+    padding: 20px;
+    /* Add padding to the main section */
+    margin: 15px;
+    /* Add margin to the main section */
+    border-radius: 10px;
+    /* Add a border radius to the main section */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    /* Add a box shadow to the main section */
+}
+
+[data-tab-content] {
+    display: none;
+}
+
+.actives[data-tab-content] {
+    display: block;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid black;
+    background-color: white;
+    width: 100%;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px;
+}
+
+
+.tab.actives {
+    background-color: red;
+}
+
+.tab:hover {
+    background-color: rgb(127, 255, 249);
+}
+
+.tab-content {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Upload */
+
+/* .box {
+
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas:
+      "form file upload"
+      "form upload";
+    grid-gap: 70px;
+    margin-top: 20px;
+    
+} */
+
+form {
+    background-color: rgba(255, 255, 255, 0.248);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -250px;
+    width: 500px;
+    height: 200px;
+    border: 4px dashed #0ac9ef;
+    border-radius: 25px;
+}
+
+form p {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 170px;
+    color: #000000;
+    font-family: Arial;
+}
+
+form input {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    position: relative;
+    z-index: 0;
+    margin-top: 100px;
+}
+
+.btn:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 40px;
+}
+
+.btn:active {
+    color: #000
+}
+
+.btn:active:after {
+    background: transparent;
+}
+
+.btn:hover:before {
+    opacity: 1;
+}
+
+.btn:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    left: 0;
+    top: 0;
+    border-radius: 40px;
+}
+
+/* Style the tab list */
+ul.tabs {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent;
+    /* Set the background to transparent */
+    border-bottom: transparent;
+    /* Add a white line under the tabs */
+    position: relative;
+    /* Add relative positioning */
+    z-index: 2;
+    /* Ensure the list is above other elements */
+}
+
+/* Style each tab item */
+ul.tabs li {
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    /* Set the font color to white */
+    transition: border-bottom-color 0.3s ease;
+    /* Add a smooth transition effect */
+    position: relative;
+    /* Add relative positioning for padding */
+}
+
+/* Style the active tab */
+ul.tabs li.active {
+    border-bottom-color: white;
+    /* Change the line color to white for the active tab */
+}
+
+/* Style tab hover effect */
+ul.tabs li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Change the background color with transparency on hover */
+}
+
+/* Add padding between text and the line */
+ul.tabs li::after {
+    content: "";
+    position: absolute;
+    left: 2%;
+    /* Adjust the padding percentage as needed */
+    right: 2%;
+    /* Adjust the padding percentage as needed */
+    bottom: 0;
+    height: 1px;
+    background-color: white;
+}
+
+
+/* Style the card container to control the layout */
+.card-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Style individual card elements */
+.card {
+    margin: 10px;
+    flex: 0 0 calc(16.66% - 20px);
+
+}
+
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/* search */
+
+
+.flexbox {
+    background: linear-gradient(155deg, #e5562b, #fb1919, #aa2626c3);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search {
+    margin: 20px;
+}
+
+.search>h3 {
+    font-weight: normal;
+}
+
+.search>h4,
+.search>h3 {
+    color: white;
+    margin-bottom: 15px;
+    text-shadow: 0 1px #b90f31;
+}
+
+.search>div {
+    display: inline-block;
+    position: relative;
+    filter: drop-shadow(0 1px #e12e05)
+}
+
+.search>div:after {
+    content: "";
+    background: white;
+    width: 4px;
+    height: 20px;
+    position: absolute;
+    top: 40px;
+    right: 3px;
+    transform: rotate(135deg)
+}
+
+.search>div>input {
+    color: white;
+    font-size: 16px;
+    background: transparent;
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    border: solid 3px white;
+    outline: none;
+    border-radius: 35px;
+    transition: width 0.5s;
+}
+
+.search>div>input::placeholder {
+    color: #efefef;
+    opacity: 0;
+    transition: opacity 150ms ease-out;
+}
+
+.search>div>input:focus::placeholder {
+    opacity: 1;
+}
+
+.search>div>input:focus,
+.search>div>input:not(:placeholder-shown) {
+    width: 250px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    color: #ffffff;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 80rem;
+}
+
+.cols {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.col {
+    width: calc(25% - 2rem);
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.container {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+
+.front,
+.back {
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-position: center;
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    text-align: center;
+    min-height: 280px;
+    height: auto;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.back {
+    background: #cedce7;
+    background: -webkit-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+    background: -o-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+    background: linear-gradient(45deg, #cedce7 0%, #596a72 100%);
+}
+
+.front:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    opacity: .6;
+    background-color: #000;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.container:hover .front,
+.container:hover .back {
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.inner {
+    -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+    transform: translateY(-50%) translateZ(60px) scale(0.94);
+    top: 50%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 1px solid transparent;
+    -webkit-perspective: inherit;
+    perspective: inherit;
+    z-index: 2;
+}
+
+.container .back {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.container .front {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.container:hover .back {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.container:hover .front {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.front .inner p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.front .inner p:after {
+    content: '';
+    width: 4rem;
+    height: 2px;
+    position: absolute;
+    background: #C6D4DF;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -.75rem;
+}
+
+.front .inner span {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Montserrat';
+    font-weight: 300;
+}
+
+@media screen and (max-width: 64rem) {
+    .col {
+        width: calc(33.333333% - 2rem);
+    }
+}
+
+@media screen and (max-width: 48rem) {
+    .col {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media screen and (max-width: 32rem) {
+    .col {
+        width: 100%;
+        margin: 0 0 2rem 0;
+    }
+}

@@ -1,0 +1,299 @@
+/* The following CSS is used to style an HTML document */
+
+/* Set the HTML and body elements to have no overflow (hide scrollbars) */
+html,
+body {
+  overflow: hidden;
+}
+
+/* Set the body to have no margin, absolute positioning, and full width and height */
+body {
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* Style the container div to be a flex container with centered content */
+#container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Style the canvas element to take up the full width and height of its container */
+canvas {
+  width: 100%;
+  height: 100%;
+}
+
+/* Style for a card element */
+.card {
+  color: white;
+  align-items: center;
+  position: relative;
+  /* Add this */
+}
+
+/* Style for an image inside a card */
+.card img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  /* Add this */
+  z-index: 1;
+  /* Add this */
+}
+
+/* Style for a container for cards */
+.card-wrapper {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  width: 300px;
+  /* You can adjust the width as needed */
+  height: 20px;
+  /* You can adjust the height as needed */
+  position: relative;
+}
+
+/* Style for an h1 element inside the card-wrapper */
+.card-wrapper h1 {
+  font-size: 25px;
+  background-color: rgb(35, 35, 35);
+  grid-row: 1;
+  /* Position in the second row (bottom) */
+  grid-column: 1;
+  /* Position in the first column (left) */
+  margin-bottom: 0px;
+  /* Remove default margin */
+  padding: -10px;
+  /* Add some padding for spacing */
+}
+
+/* Style for the gallery container */
+#gallery {
+  height: 100vmax;
+  width: 100vmax;
+  position: absolute;
+}
+
+/* Style for individual tiles inside the gallery */
+.tile {
+  border-radius: 1vmax;
+  position: absolute;
+  transition: transform 800ms ease;
+}
+
+/* Hover effect for tiles */
+.tile:hover {
+  transform: scale(1.1);
+}
+
+/* Hover effect for cards inside tiles */
+.tile:hover>.card {
+  opacity: 1;
+  transform: scale(1.01);
+}
+
+/* Hover effect for the ::after pseudo-element of cards */
+.tile:hover>.card::after {
+  opacity: 1;
+}
+
+/* Style for cards inside tiles */
+.tile>.card {
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 800ms ease, transform 800ms ease;
+}
+
+/* Style for text inside cards */
+.card-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  color: white;
+  opacity: 0;
+  transition: opacity 800ms ease;
+}
+
+/* Style for the ::after pseudo-element of cards */
+.card::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10rem;
+  color: white;
+  opacity: 0;
+  transition: opacity 800ms ease;
+}
+
+/* Style for individual tiles using :nth-child selector */
+.tile:nth-child(1) {
+  background-color: rgb(255, 238, 88);
+  height: 14%;
+  width: 20%;
+  left: 5%;
+  top: 5%;
+}
+
+.tile:nth-child(2) {
+  background-color: rgb(66, 165, 245);
+  height: 24%;
+  width: 14%;
+  left: 42%;
+  top: 12%;
+}
+
+.tile:nth-child(3) {
+  background-color: rgb(239, 83, 80);
+  height: 18%;
+  width: 16%;
+  left: 12%;
+  top: 34%;
+}
+
+.tile:nth-child(4) {
+  background-color: rgb(102, 187, 106);
+  height: 14%;
+  width: 12%;
+  left: 45%;
+  top: 48%;
+}
+
+.tile:nth-child(5) {
+  background-color: rgb(171, 71, 188);
+  height: 16%;
+  width: 32%;
+  left: 8%;
+  top: 70%;
+}
+
+.tile:nth-child(6) {
+  background-color: rgb(255, 167, 38);
+  height: 24%;
+  width: 24%;
+  left: 68%;
+  top: 8%;
+}
+
+.tile:nth-child(7) {
+  background-color: rgb(63, 81, 181);
+  height: 16%;
+  width: 20%;
+  left: 50%;
+  top: 74%;
+}
+
+p {
+  text-shadow: 0 0 7px rgba(255, 255, 255, .3), 0 0 3px rgba(255, 255, 255, .3);
+}
+
+
+.container {
+  font-size: 2.26rem;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 40%;
+  left: 56%;
+  color: white;
+}
+
+.animation {
+  height: 50px;
+  overflow: hidden;
+  margin-left: 1rem;
+}
+
+.animation>div>div {
+  padding: 0.25rem 0.75rem;
+  height: 2.81rem;
+  margin-bottom: 2.81rem;
+  display: inline-block;
+}
+
+
+.animation div:first-child {
+  animation: text-animation 8s infinite;
+}
+
+
+.first div {
+  background-color: #20a7d8;
+}
+
+
+.second div {
+  background-color: #CD921E;
+}
+
+
+.third div {
+  background-color: #c10528;
+}
+
+
+@keyframes text-animation {
+  0% {
+    margin-top: 0;
+  }
+
+
+  10% {
+    margin-top: 0;
+  }
+
+
+  20% {
+    margin-top: -5.62rem;
+  }
+
+
+  30% {
+    margin-top: -5.62rem;
+  }
+
+
+  40% {
+    margin-top: -11.24rem;
+  }
+
+
+  60% {
+    margin-top: -11.24rem;
+  }
+
+
+  70% {
+    margin-top: -5.62rem;
+  }
+
+
+  80% {
+    margin-top: -5.62rem;
+  }
+
+
+  90% {
+    margin-top: 0;
+  }
+
+
+  100% {
+    margin-top: 0;
+  }
+} 
